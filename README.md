@@ -13,8 +13,17 @@ There are extra items I added at the bottom that may come up in the interview or
 Steve Yegge's "[Get that job at Google](http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)" and are reflected
 sometimes word-for-word in Google's coaching notes.
 
-I've pared down what you need to know from what Yegge says for new software engineers. If you have many years of experience, expect a harder interview.
+I've pared down what you need to know from what Yegge recommends. I've altered Yegge's requirements 
+from information received from my contact at Google. This is meant for **new software engineers** or those switching from 
+software/web development to software engineering (where computer science knowledge is required). If you have 
+many years of experience and are claiming many years of software engineering experience, expect a harder interview. 
 [Read more here](https://googleyasheck.com/what-you-need-to-know-for-your-google-interview-and-what-you-dont/).
+
+If you have many years of software/web development experience, note that large companies view software engineering as 
+different from software/web development and they require computer science knowledge.
+[Read more about that here](https://googleyasheck.com/software-engineering-is-not-software-web-development/)
+
+If you want to be a reliability engineer or systems engineer, study more from the optional list (networking, security).
 
 ---
 
@@ -66,6 +75,8 @@ I've pared down what you need to know from what Yegge says for new software engi
 - [Even More Knowledge](#even-more-knowledge)
     - [Recursion](#recursion)
     - [Dynamic Programming](#dynamic-programming)
+    - [Object-Oriented Programming](#object-oriented-programming)
+    - [Design Patterns](#design-patterns)
     - [Combinatorics (n choose k) & Probability](#combinatorics-n-choose-k--probability)
     - [NP, NP-Complete and Approximation Algorithms](#np-np-complete-and-approximation-algorithms)
     - [Caches](#caches)
@@ -100,11 +111,10 @@ I've pared down what you need to know from what Yegge says for new software engi
     - [Entropy](#entropy)
     - [Cryptography](#cryptography)
     - [Compression](#compression)
-    - [Networking](#networking) (if you have networking experience, expect questions)
+    - [Networking](#networking) (if you have networking experience or want to be a systems engineer, expect questions)
     - [Computer Security](#computer-security)
     - [Garbage collection](#garbage-collection)
     - [Parallel Programming](#parallel-programming)
-    - [Design patterns](#design-patterns)
     - [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
     - [Fast Fourier Transform](#fast-fourier-transform)
     - [Bloom Filter](#bloom-filter)
@@ -150,7 +160,7 @@ low-level languages, and how it all works. And if you don't know any of it, Goog
 When I started this project, I didn't know a stack from a heap, didn't know Big-O anything, anything about trees, or how to
 traverse a graph. If I had to code a sorting algorithm, I can tell ya it wouldn't have been very good.
 Every data structure I've ever used was built into the language, and I didn't know how they worked
-under the hood at all. I've never had to manage memory, unless a process I was running would give an "out of
+under the hood at all. I've never had to manage memory unless a process I was running would give an "out of
 memory" error, and then I'd have to find a workaround. I've used a few multidimensional arrays in my life and
 thousands of associative arrays, but I've never created data structures from scratch.
 
@@ -290,7 +300,7 @@ You could also use these, but read around first. There may be caveats:
 - JavaScript
 - Ruby
 
-You need to be very comfortable in the language, and be knowledgeable.
+You need to be very comfortable in the language and be knowledgeable.
 
 Read more about choices:
 - http://www.byte-by-byte.com/choose-the-right-language-for-your-coding-interview/
@@ -333,7 +343,7 @@ same card and answer it several times correctly before you really know it. Repet
 your brain.
 
 An alternative to using my flashcard site is [Anki](http://ankisrs.net/), which has been recommended to me numerous times. It uses a repetition system to help you remember. 
-It's user friendly, available on all platforms and has a cloud sync system. It costs $25 on iOS but is free on other platforms.
+It's user-friendly, available on all platforms and has a cloud sync system. It costs $25 on iOS but is free on other platforms.
 
 My flashcard database in Anki format: https://ankiweb.net/shared/info/25173560 (thanks [@xiewenya](https://github.com/xiewenya))
 
@@ -345,7 +355,7 @@ Take a break from programming problems for a half hour and go through your flash
 
 ### 4. Focus
 
-There are a lot of distractions that can take up valuable time. Focus and concentration is hard.
+There are a lot of distractions that can take up valuable time. Focus and concentration are hard.
 
 ## What you won't see covered
 
@@ -843,6 +853,56 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [ ] [Global pairwise sequence alignment (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/UZ7o6/global-pairwise-sequence-alignment)
         - [ ] [Local pairwise sequence alignment (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/WnNau/local-pairwise-sequence-alignment)
 
+- ### Object-Oriented Programming
+    - [ ] [Optional: UML 2.0 Series (video)](https://www.youtube.com/watch?v=OkC7HKtiZC0&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc)
+    - [ ] Object-Oriented Software Engineering: Software Dev Using UML and Java (21 videos):
+        - Can skip this if you have a great grasp of OO and OO design practices.
+        - [OOSE: Software Dev Using UML and Java](https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
+    - [ ] SOLID OOP Principles:
+        - [x] [Bob Martin SOLID Principles of Object Oriented and Agile Design (video)](https://www.youtube.com/watch?v=TMuno5RZNeE)
+        - [ ] [SOLID Design Patterns in C# (video)](https://www.youtube.com/playlist?list=PL8m4NUhTQU48oiGCSgCP1FiJEcg_xJzyQ)
+        - [ ] [SOLID Principles (video)](https://www.youtube.com/playlist?list=PL4CE9F710017EA77A)
+        - [ ] S - [Single Responsibility Principle](http://www.oodesign.com/single-responsibility-principle.html) | [Single responsibility to each Object](http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html)
+            - [more flavor](https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk)
+        - [ ] O - [Open/Closed Principal](http://www.oodesign.com/open-close-principle.html)  | [On production level Objects are ready for extension for not for modification](https://en.wikipedia.org/wiki/Open/closed_principle)
+            - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgN2M5MTkwM2EtNWFkZC00ZTI3LWFjZTUtNTFhZGZiYmUzODc1&hl=en)
+        - [ ] L - [Liskov Substitution Principal](http://www.oodesign.com/liskov-s-substitution-principle.html) | [Base Class and Derived class follow ‘IS A’ principal](http://stackoverflow.com/questions/56860/what-is-the-liskov-substitution-principle)
+            - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh&hl=en)
+        - [ ] I - [Interface segregation principle](http://www.oodesign.com/interface-segregation-principle.html) | clients should not be forced to implement interfaces they don't use
+            - [Interface Segregation Principle in 5 minutes (video)](https://www.youtube.com/watch?v=3CtAfl7aXAQ)
+            - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi&hl=en)
+        - [ ] D -[Dependency Inversion principle](http://www.oodesign.com/dependency-inversion-principle.html) | Reduce the dependency In composition of objects.
+            - [Why Is The Dependency Inversion Principle And Why Is It Important](http://stackoverflow.com/questions/62539/what-is-the-dependency-inversion-principle-and-why-is-it-important)
+            - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz&hl=en)
+
+- ### Design patterns
+    - [ ] [Quick UML review (video)](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&index=3)
+    - [ ] Learn these patterns:
+        - [ ] strategy
+        - [ ] singleton
+        - [ ] adapter
+        - [ ] prototype
+        - [ ] decorator
+        - [ ] visitor
+        - [ ] factory, abstract factory
+        - [ ] facade
+        - [ ] observer
+        - [ ] proxy
+        - [ ] delegate
+        - [ ] command
+        - [ ] state
+        - [ ] memento
+        - [ ] iterator
+        - [ ] composite
+        - [ ] flyweight
+    - [ ] [Chapter 6 (Part 1) - Patterns (video)](https://youtu.be/LAP2A80Ajrg?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO&t=3344)
+    - [ ] [Chapter 6 (Part 2) - Abstraction-Occurrence, General Hierarchy, Player-Role, Singleton, Observer, Delegation (video)](https://www.youtube.com/watch?v=U8-PGsjvZc4&index=12&list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
+    - [ ] [Chapter 6 (Part 3) - Adapter, Facade, Immutable, Read-Only Interface, Proxy (video)](https://www.youtube.com/watch?v=7sduBHuex4c&index=13&list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
+    - [ ] [Series of videos (27 videos)](https://www.youtube.com/playlist?list=PLF206E906175C7E07)
+    - [ ] [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Freeman/dp/0596007124)
+        - I know the canonical book is "Design Patterns: Elements of Reusable Object-Oriented Software", but Head First is great for beginners to OO.
+    - [ ] [Handy reference: 101 Design Patterns & Tips for Developers](https://sourcemaking.com/design-patterns-and-tips)
+
 - ### Combinatorics (n choose k) & Probability
     - [ ] [Math Skills: How to find Factorial, Permutation and Combination (Choose) (video)](https://www.youtube.com/watch?v=8RRo6Ti9d0U)
     - [ ] [Make School: Probability (video)](https://www.youtube.com/watch?v=sZkAAk9Wwa4)
@@ -903,7 +963,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - CPU activity, interrupts, context switching
         - Modern concurrency constructs with multicore processors
         - Process resource needs (memory: code, static storage, stack, heap, and also file descriptors, i/o)
-        - Thread resource needs (shares above (minus stack) with other threads in same process but each has its own pc, stack counter, registers and stack)
+        - Thread resource needs (shares above (minus stack) with other threads in the same process but each has its own pc, stack counter, registers, and stack)
         - Forking is really copy on write (read-only) until the new process writes to memory, then it does a full copy.
         - Context switching
             - How context switching is initiated by the operating system and underlying hardware
@@ -1019,26 +1079,6 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [paper](http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf)
 - [ ] [Consistent Hashing](http://www.tom-e-white.com/2007/11/consistent-hashing.html)
 - [ ] [NoSQL Patterns](http://horicky.blogspot.com/2009/11/nosql-patterns.html)
-- [ ] [Optional: UML 2.0 Series (vido)](https://www.youtube.com/watch?v=OkC7HKtiZC0&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc)
-- [ ] OOSE: Software Dev Using UML and Java (21 videos):
-    - Can skip this if you have a great grasp of OO and OO design practices.
-    - [OOSE: Software Dev Using UML and Java](https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
-- [ ] SOLID OOP Principles:
-    - [x] [Bob Martin SOLID Principles of Object Oriented and Agile Design (video)](https://www.youtube.com/watch?v=TMuno5RZNeE)
-    - [ ] [SOLID Design Patterns in C# (video)](https://www.youtube.com/playlist?list=PL8m4NUhTQU48oiGCSgCP1FiJEcg_xJzyQ)
-    - [ ] [SOLID Principles (video)](https://www.youtube.com/playlist?list=PL4CE9F710017EA77A)
-    - [ ] S - [Single Responsibility Principle](http://www.oodesign.com/single-responsibility-principle.html) | [Single responsibility to each Object](http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html)
-        - [more flavor](https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk)
-    - [ ] O - [Open/Closed Principal](http://www.oodesign.com/open-close-principle.html)  | [On production level Objects are ready for extension for not for modification](https://en.wikipedia.org/wiki/Open/closed_principle)
-        - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgN2M5MTkwM2EtNWFkZC00ZTI3LWFjZTUtNTFhZGZiYmUzODc1&hl=en)
-    - [ ] L - [Liskov Substitution Principal](http://www.oodesign.com/liskov-s-substitution-principle.html) | [Base Class and Derived class follow ‘IS A’ principal](http://stackoverflow.com/questions/56860/what-is-the-liskov-substitution-principle)
-        - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh&hl=en)
-    - [ ] I - [Interface segregation principle](http://www.oodesign.com/interface-segregation-principle.html) | clients should not be forced to implement interfaces they don't use
-        - [Interface Segregation Principle in 5 minutes (video)](https://www.youtube.com/watch?v=3CtAfl7aXAQ)
-        - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi&hl=en)
-    - [ ] D -[Dependency Inversion principle](http://www.oodesign.com/dependency-inversion-principle.html) | Reduce the dependency In composition of objects.
-        - [Why Is The Dependency Inversion Principle And Why Is It Important](http://stackoverflow.com/questions/62539/what-is-the-dependency-inversion-principle-and-why-is-it-important)
-        - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz&hl=en)
 - [ ] Scalability:
     - [ ] [Great overview (video)](https://www.youtube.com/watch?v=-W9F__D3oY4)
     - [ ] Short series:
@@ -1209,7 +1249,7 @@ Supplemental:
                 - nice stories from his experiences solving problems in industry and academia
                 - code examples in C
             - cons:
-                - can be as dense or impenetrable as CLRS, and in some cases CLRS may be a better alternative for some subjects
+                - can be as dense or impenetrable as CLRS, and in some cases, CLRS may be a better alternative for some subjects
                 - chapters 7, 8, 9 can be painful to try to follow, as some items are not explained well or require more brain than I have
                 - don't get me wrong: I like Skiena, his teaching style, and mannerisms, but I may not be Stony Brook material.
         - algorithm catalog:
@@ -1258,12 +1298,11 @@ Supplemental:
     - For a richer, more up-to-date (2011), but longer treatment, pick up [Computer Architecture, Fifth Edition: A Quantitative Approach](https://www.amazon.com/dp/012383872X/)
 - [ ] [Elements of Programming Interviews](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836)
     - all code is in C++, if you're looking to use C++ in your interview
-    - good book on problem solving in general.
+    - a good book on problem solving in general.
 
 **Perhaps**
 - [ ] [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
-    - **Important:** Reading this book will only have limited value. This book is a great review of algorithms and data
-     structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently.
+    - **Important:** Reading this book will only have limited value. This book is a great review of algorithms and data structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently.
     - To quote Yegge: "But if you want to come into your interviews *prepped*, then consider deferring your application until you've made your way through that book."
     - Half.com is a great resource for textbooks at good prices.
     - aka CLR, sometimes CLRS, because Stein was late to the game
@@ -1310,7 +1349,7 @@ Maybe:
 
 ## Be thinking of for when the interview comes
 
-Think of about 20 interview questions you'll get, along the lines of the items below. Have 2-3 answers for each.
+Think of about 20 interview questions you'll get, along with the lines of the items below. Have 2-3 answers for each.
 Have a story, not just data, about something you accomplished.
 
 - Why do you want this job?
@@ -1478,7 +1517,9 @@ You're never really done.
     - [ ] [Compressor Head videos](https://www.youtube.com/playlist?list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H)
     - [ ] [(optional) Google Developers Live: GZIP is not enough!](https://www.youtube.com/watch?v=whGwm0Lky2s)
 
-- ### Networking (videos)
+- ### Networking
+    - **if you have networking experience or want to be a systems engineer, expect questions**
+    - otherwise, this is just good to know
     - [ ] [Khan Academy](https://www.khanacademy.org/computing/computer-science/internet-intro)
     - [ ] [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8)
     - [ ] [TCP/IP and the OSI Model Explained!](https://www.youtube.com/watch?v=e5DEVa9eSN0)
@@ -1515,34 +1556,6 @@ You're never really done.
 - ### Parallel Programming
     - [ ] [Coursera (Scala)](https://www.coursera.org/learn/parprog1/home/week/1)
     - [ ] [Efficient Python for High Performance Parallel Computing (video)](https://www.youtube.com/watch?v=uY85GkaYzBk)
-
-- ### Design patterns
-    - [ ] [Quick UML review (video)](https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&index=3)
-    - [ ] Learn these patterns:
-        - [ ] strategy
-        - [ ] singleton
-        - [ ] adapter
-        - [ ] prototype
-        - [ ] decorator
-        - [ ] visitor
-        - [ ] factory, abstract factory
-        - [ ] facade
-        - [ ] observer
-        - [ ] proxy
-        - [ ] delegate
-        - [ ] command
-        - [ ] state
-        - [ ] memento
-        - [ ] iterator
-        - [ ] composite
-        - [ ] flyweight
-    - [ ] [Chapter 6 (Part 1) - Patterns (video)](https://youtu.be/LAP2A80Ajrg?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO&t=3344)
-    - [ ] [Chapter 6 (Part 2) - Abstraction-Occurrence, General Hierarchy, Player-Role, Singleton, Observer, Delegation (video)](https://www.youtube.com/watch?v=U8-PGsjvZc4&index=12&list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
-    - [ ] [Chapter 6 (Part 3) - Adapter, Facade, Immutable, Read-Only Interface, Proxy (video)](https://www.youtube.com/watch?v=7sduBHuex4c&index=13&list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO)
-    - [ ] [Series of videos (27 videos)](https://www.youtube.com/playlist?list=PLF206E906175C7E07)
-    - [ ] [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Freeman/dp/0596007124)
-        - I know the canonical book is "Design Patterns: Elements of Reusable Object-Oriented Software", but Head First is great for beginners to OO.
-    - [ ] [Handy reference: 101 Design Patterns & Tips for Developers](https://sourcemaking.com/design-patterns-and-tips)
 
 - ### Messaging, Serialization, and Queueing Systems
     - [ ] [Thrift](https://thrift.apache.org/)
@@ -1584,8 +1597,8 @@ You're never really done.
     - [How To Count A Billion Distinct Objects Using Only 1.5KB Of Memory](http://highscalability.com/blog/2012/4/5/big-data-counting-how-to-count-a-billion-distinct-objects-us.html)
 
 - ### Locality-Sensitive Hashing
-    - used to determine similarity of documents
-    - the opposite of md5 or sha which are used to determine if 2 documents/strings are exactly the same.
+    - used to determine the similarity of documents
+    - the opposite of MD5 or SHA which are used to determine if 2 documents/strings are exactly the same.
     - [Simhashing (hopefully) made simple](http://ferd.ca/simhashing-hopefully-made-simple.html)
 
 - ### van Emde Boas Trees
@@ -1643,7 +1656,7 @@ You're never really done.
         - In practice:
             Splay trees are typically used in the implementation of caches, memory allocators, routers, garbage collectors,
             data compression, ropes (replacement of string used for long text strings), in Windows NT (in the virtual memory,
-            networking, and file system code) etc.
+            networking and file system code) etc.
         - [ ] [CS 61B: Splay Trees (video)](https://www.youtube.com/watch?v=Najzh1rYQTo&index=23&list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd)
         - [ ] MIT Lecture: Splay Trees:
             - Gets very mathy, but watch the last 10 minutes for sure.
@@ -1859,7 +1872,7 @@ You're never really done.
 
 ## Video Series
 
-Sit back and enjoy. "netflix and skill" :P
+Sit back and enjoy. "Netflix and skill" :P
 
 - [ ] [List of individual Dynamic Programming problems (each is short)](https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
 
